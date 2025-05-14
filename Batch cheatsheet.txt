@@ -1,0 +1,49 @@
+@echo off
+@ supresses the output of this line. ECHO off disables it for the rest of the script
+
+setlocal enabledelayedexpansion
+setlocal will ensure youre working with local vars and not messing with system vars
+enabledelayedexpansion for good practice?
+
+rem starts a comment
+
+echo prints an output to console
+
+timeout /t %seconds% /nobreak
+/nobreak: ignore user keypresses, ctrl C to resume excecution
+timeout /t -1 -> equivalent to pause
+ 
+set without further parameter lists all vars
+set a lists all vars starting with a
+set /p hours=Enter time in hours to hibernate: 
+set to declare a var, /p to get user input, /a declares a math expression to be evaluated
+
+https://learn.microsoft.com/en-my/windows-server/administration/windows-commands/set_1
+set [<variable>=[<string>]]
+set [/p] <variable>=[<promptString>]
+set /a <variable>=<expression>
+<variable>	Specifies the environment variable to set or modify.
+<string>	Specifies the string to associate with the specified environment variable.
+/p	Sets the value of <variable> to a line of input entered by the user.
+<promptstring>	Specifies a message to prompt the user for input. This parameter must be used with the /p parameter.
+/a	Sets <string> to a numerical expression that is evaluated.
+<expression>	Specifies a numerical expression.
+/?	Displays help at the command prompt.
+
+rem Convert hours to seconds
+set /a seconds=hours*3600
+
+rem Hibernate the computer
+shutdown /h
+
+.\hidapitester.exe to look for it on the same dir as .bat
+..\hidapitester.exe to look for it on parent dir??
+C:\Files\hidapitester.exe you can also give the full path
+
+for /l {%%|%}<variable> in (<start#>,<step#>,<end#>) do <command> [<commandlineoptions>]
+	/l makes it loop on the specified array
+for vars need to be single char only??
+
+for %%b in (0,1,2) do (
+	echo b is now %%b & pause
+)

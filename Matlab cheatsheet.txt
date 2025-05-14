@@ -1,0 +1,39 @@
+
+
+% Doesnt clear if is imported by another script
+if length(dbstack) == 1 && strcmp(mfilename, dbstack().name), close; clc; clear; end
+
+Plot figure as full screen:
+set(gcf, 'Position', get(0, 'Screensize'));
+
+A == B returns false if both are string with different lenghts
+A == B returns error if both are char  with different lenghts
+
+With p = plot(…) you can do cool stuff with legend:
+p = plot(time, V, '-' ,LineWidth = 2,Color = [0.84 0.10 0.27], DisplayName='Velocity') 
+legend (Location = 'Best')
+Maybe it works without declaring p?
+Surround legend entries with $ and set interpreter to latex
+Legend("Boxoff")
+Legend('-DynamicLegend') ?
+Yscale log from 2023b
+
+Ctrl Shift C to duplicate current line
+Ctrl + - to increase/decrese selected variable
+
+%% Generate a distinct color palette based on HSV
+% Create as many colors as vehicles, spacing hues evenly
+nC = nVehicles;  % number of distinct colors needed
+hues = linspace(0,1,nC+1); hues(end) = [];  % wrap-around removal
+rgb = hsv2rgb([hues', ones(nC,1), 0.8*ones(nC,1)]);
+newcolors = strings(1,nC);
+for i = 1:nC
+    newcolors(i) = sprintf('#%02X%02X%02X', round(rgb(i,1)*255), round(rgb(i,2)*255), round(rgb(i,3)*255));
+end
+% Apply the generated palette
+colororder(newcolors);
+
+
+Recomendacoes Seweryn
+BTF vendedor bom no ali
+FCOB leds com difusor
