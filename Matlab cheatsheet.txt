@@ -32,8 +32,3 @@ for i = 1:nC
 end
 % Apply the generated palette
 colororder(newcolors);
-
-
-Recomendacoes Seweryn
-BTF vendedor bom no ali
-FCOB leds com difusor
