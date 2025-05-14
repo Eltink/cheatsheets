@@ -5,7 +5,8 @@ setlocal enabledelayedexpansion
 setlocal will ensure youre working with local vars and not messing with system vars
 enabledelayedexpansion for good practice?
 
-rem starts a comment
+rem starts a comment (remark)
+:: can be used sometimes, but not in for loops
 
 echo prints an output to console
 
@@ -36,6 +37,14 @@ set /a seconds=hours*3600
 rem Hibernate the computer
 shutdown /h
 
+IF EXIST "temp.txt" (
+    ECHO found
+) ELSE (
+    ECHO not found
+)
+or just
+IF EXIST "temp.txt" ECHO found
+
 .\hidapitester.exe to look for it on the same dir as .bat
 ..\hidapitester.exe to look for it on parent dir??
 C:\Files\hidapitester.exe you can also give the full path
@@ -47,3 +56,15 @@ for vars need to be single char only??
 for %%b in (0,1,2) do (
 	echo b is now %%b & pause
 )
+
+NEQ: not equal to
+IF %ERRORLEVEL% NEQ 0 (
+  REM do something here to address the error
+)
+IF ERRORLEVEL 1 (
+  REM do something here to address the error
+)
+To execute a follow-on command after sucess, we use the && operator:
+	SomeCommand.exe && ECHO SomeCommand.exe succeeded!
+To execute a follow-on command after failure, we use the || operator:
+	SomeCommand.exe || ECHO SomeCommand.exe failed with return code %ERRORLEVEL%
