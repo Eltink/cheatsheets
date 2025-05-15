@@ -1,0 +1,7 @@
+X	Toggle between normal (line) and construction
+
+L Line
+C circle
+R Rectangle
+T Trim line
+E Extrude

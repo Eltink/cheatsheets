@@ -1,0 +1,6 @@
+remove dyn noises off
+intelligent aggressive off
+Reduce light pollution: very dependent on usecase, use 1 or 2
+Enhance star light off
+	Ok if it works, otherwise looks bad
+	I can do it better myself
