@@ -4,9 +4,17 @@ Resolution: 1920 x 1280 pra 3:2
 	    3240 x 2160
 Retime clip: Ctrl R
 	RClick > Retime curve: set speed ramp
+	Click arrow down next to 100% → Add speed point
 
 Export TIFF from DaVinci
 	Set timeline resolution to highest
 	Project Settings ▸ Camera RAW → Decode Quality = Full.
 	Deliver ▸ Advanced Settings → enable Force debayer to highest quality & Force sizing to highest quality
 	Render at full resolution only with pro, max is 4k 3:2
+
+Quality	Bitrate exporting
+	• 1080p: 12–16 Mb/s
+	• 4 K: 45–80 Mb/s
+
+Custom export → File
+	Use timeline names and export as individual files
