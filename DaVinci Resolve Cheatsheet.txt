@@ -2,9 +2,12 @@ Shift 9> Project settings> Timeline resolution
 
 Resolution: 1920 x 1280 pra 3:2
 	    3240 x 2160
-Retime clip: Ctrl R
+Retime clip speed: Ctrl R
 	RClick > Retime curve: set speed ramp
 	Click arrow down next to 100% → Add speed point
+For audio: bottom right to open curve
+	Alt click to add keyframe, then move playhead and add another
+	Change audio curve
 
 Export TIFF from DaVinci
 	Set timeline resolution to highest
