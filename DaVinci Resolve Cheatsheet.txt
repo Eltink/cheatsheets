@@ -14,6 +14,7 @@ Export TIFF from DaVinci
 	Project Settings ▸ Camera RAW → Decode Quality = Full.
 	Deliver ▸ Advanced Settings → enable Force debayer to highest quality & Force sizing to highest quality
 	Render at full resolution only with pro, max is 4k 3:2
+	Set output file format from MOV to TIFF
 
 Quality	Bitrate exporting
 	• 1080p: 12–16 Mb/s
