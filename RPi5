@@ -1,0 +1,20 @@
+Desktop version: Has a graphical interface (like Windows or macOS).
+Lite version: Command-line only (no GUI), uses fewer resources.
+
+SSH (Secure Shell): A way to remotely access your Raspberry Pi’s terminal from another computer.
+  SSH user@ip → SSH glauco@192.168.172.01
+Docker: A tool to run applications in isolated environments called containers. Makes it easy to run apps without worrying about dependencies or messing up your system.
+Docker Compose: A tool to define and run multi-container Docker applications using a YAML file.
+VNC: Remote desktop access to your Pi
+(Real)VNC: Virtual Network Computing: KVM for you RPi
+
+CLI Commands
+cd: Change Directory
+  mkdir, rm, cp, mv
+ls: listdir
+sudo: SuperUserDO: run a command as admin
+apt (Advanced Package Tool): Install, update, or remove software on Debian-based systems (like Ubuntu).
+  sudo apt update → Update package list
+  sudo apt install firefox
+top: analog to task manager, press q to quit view
+ping, ifconfig, ip, nmap: explore your network
