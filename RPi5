@@ -18,3 +18,5 @@ apt (Advanced Package Tool): Install, update, or remove software on Debian-based
   sudo apt install firefox
 top: analog to task manager, press q to quit view
 ping, ifconfig, ip, nmap: explore your network
+
+sudo dpkg-reconfigure console-setup: configure display settings on CLI OS
