@@ -8,7 +8,8 @@ Shift 9> Project settings> Timeline resolution
 Resolution: 1920 x 1280 pra 3:2
 	    3240 x 2160
 Retime clip speed: Ctrl R
-	RClick > Retime curve: set speed ramp
+	Enable keyframes menu
+	Undock menu to set transition mode
 	Click arrow down next to 100% → Add speed point
 For audio: bottom right to open curve
 	Alt click to add keyframe, then move playhead and add another
@@ -28,5 +29,7 @@ Quality	Bitrate exporting
 Custom export → File
 	Use timeline names and export as individual files
 
-c to add a marker
 Alt A for auto in color page
+M	Add marker
+I	Mark in
+O	Mark out
