@@ -1,0 +1,50 @@
+Variables
+  Dim i As Integer
+  Dim msg As String
+  Dim ws As Worksheet
+Dim declares.
+You can enforce declarations with Option Explicit at top (recommended).
+Types: Integer, Long, Double, String, Boolean, Variant (default, “catch-all”).
+
+Control Structures
+If x > 10 Then
+    MsgBox "Big"
+ElseIf x > 5 Then
+    MsgBox "Medium"
+Else
+    MsgBox "Small"
+End If
+
+For i = 1 To 10
+    Debug.Print i
+Next i
+
+Do While i < 100
+    i = i + 1
+Loop
+
+Sub SayHello() 'Sub: executes, no return
+    MsgBox "Hello world!"
+End Sub
+
+Function Square(x As Double) As Double 'Function: returns value, can be called in cells like formulas
+    Square = x * x
+End Function
+
+Key Objects
+  Application → the Excel app itself.
+  Workbook → a file.
+  Worksheet → a sheet.
+  Range → cells.
+
+'Active sheet A1 value
+Range("A1").Value = "Hello"
+
+'Explicit reference
+ThisWorkbook.Sheets("Data").Range("B2").Value = 123
+
+'Loop through worksheets
+Dim ws As Worksheet
+For Each ws In ThisWorkbook.Sheets
+    Debug.Print ws.Name
+Next ws
