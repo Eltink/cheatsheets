@@ -1,0 +1,3 @@
+To convert from a 100x1 row to a 10x10 table:
+  =INDEX(A1:A100,SEQUENCE(10,10)) row by row
+  =INDEX(A1:A100,TRANSPOSE(SEQUENCE(10,10))) column by column
