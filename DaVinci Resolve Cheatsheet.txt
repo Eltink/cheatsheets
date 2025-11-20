@@ -5,10 +5,10 @@ Batch edit videos for cold storage
 
 Shift 9> Project settings> Timeline resolution
 
-Resolution 3x2: 
+Resolution 3x2: (Sony)
 	1920 x 1280
 	3240 x 2160
-Resolution 4x3:
+Resolution 4x3: (DJI)
 	1920 × 1440
 	3240 × 2430
 Retime clip speed: Ctrl R
@@ -37,4 +37,5 @@ Alt A for auto in color page
 M	Add marker
 I	Mark in
 O	Mark out
+
 
