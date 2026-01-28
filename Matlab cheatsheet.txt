@@ -33,3 +33,19 @@ end
 % Apply the generated palette
 colororder(newcolors);
 
+%% KI Code für datatips
+chartObj = findobj(gcf, 'Type', 'line'); % gcf grabs last figure, replace with figure(N) to specify
+line_to_datatip = 5; % Which line to add them to
+x = chartObj(line_to_datatip).XData;
+y = chartObj(line_to_datatip).YData;
+dy = diff(y);
+peakCandidates = find( dy(1:end-1) > 0 & dy(2:end) <= 0 ) + 1;
+if numel(peakCandidates) < 2
+    error('Less than two local maxima were detected in the data.');
+end
+peakXs = x(peakCandidates);
+peakYs = y(peakCandidates); % Run peakYs in console to get values as text
+[sortedHeights, sortIdx] = sort(peakYs, 'descend');
+for i = 1:length(peakXs)
+	datatip(chartObj(line_to_datatip), peakXs(sortIdx(i)), sortedHeights(i));
+end
