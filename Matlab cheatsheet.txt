@@ -16,7 +16,7 @@ Maybe it works without declaring p?
 Surround legend entries with $ and set interpreter to latex
 Legend("Boxoff")
 Legend('-DynamicLegend') ?
-Yscale log from 2023b
+yscale log from 2023b
 
 Ctrl Shift C to duplicate current line
 Ctrl + - to increase/decrese selected variable
@@ -32,3 +32,4 @@ for i = 1:nC
 end
 % Apply the generated palette
 colororder(newcolors);
+
