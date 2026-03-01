@@ -4,4 +4,9 @@ L Line
 C circle
 R Rectangle
 T Trim line
+
 E Extrude
+
+Custom set:
+Ctrl Shift P to 3D Print
+Ctrl Alt S to Finish Sketch
