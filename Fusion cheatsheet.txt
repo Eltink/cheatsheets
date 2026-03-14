@@ -7,6 +7,8 @@ T Trim line
 
 E Extrude
 
+Components are a container for Sketches, 3d bodies, joints, reference images, etc
+
 Custom set:
 Ctrl Shift P to 3D Print
 Ctrl Alt S to Finish Sketch
