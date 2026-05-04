@@ -15,6 +15,10 @@ Retime clip speed: Ctrl R
 	Enable keyframes menu
 	Undock menu to set transition mode
 	Click arrow down next to 100% → Add speed point
+Motion blur
+	Fusion page → Select mediain1 node
+	Shift + Spacebar → Optical Flow → This analyzes motion.
+	Shift + Spacebar → Vector Motion Blur
 For audio: bottom right to open curve
 	Alt click to add keyframe, then move playhead and add another
 	Change audio curve
