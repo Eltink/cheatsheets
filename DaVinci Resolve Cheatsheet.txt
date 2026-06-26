@@ -30,6 +30,10 @@ Export TIFF from DaVinci
 	Render at full resolution only with pro, max is 4k 3:2
 	Set output file format from MOV to TIFF
 
+Edit photos to timelapses: DaVinci now supports .ARW
+	Color>Camera Raw>Custom WB, Log ColorSpace
+	Alt+S to add node>LUT>DCR 4kFilm to Rec709v3
+
 Quality	Bitrate exporting
 	• 1080p: 12–16 Mb/s
 	• 4 K: 45–80 Mb/s
