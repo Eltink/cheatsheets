@@ -34,6 +34,18 @@ Edit photos to timelapses: DaVinci now supports .ARW
 	Color>Camera Raw>Custom WB, Log ColorSpace
 	Alt+S to add node>LUT>DCR 4kFilm to Rec709v3
 
+Video stabilization with tracking
+Method 2: The Fusion Page (Maximum Control)
+If the drone makes sharp movements between photos or the boat changes perspective slightly, the Fusion page gives you a more robust tracker where you can adjust the search area to compensate for the hyperlapse jumps.
+Place your playhead over the clip and switch to the Fusion Page.
+Make sure your MediaIn node is selected, press Shift + Space, type Tracker (just the standard one, not Planar), and hit enter to add it between your MediaIn and MediaOut.
+In the viewer, you will see a green tracking box. Drag the top-left handle to position the inner box over your rigid, high-contrast point on the boat.
+Expand the search area: The outer dashed box dictates where Resolve looks for that point in the next frame. Since drone hyperlapses have larger jumps between frames than standard video, drag the edges of this outer box to make it slightly larger than usual.
+Click Track Forward in the Inspector.
+Once finished tracking, go to the Operation tab in the Inspector.
+Change the Operation dropdown to Match Move.
+Change the Merge dropdown to BG Only.
+
 Quality	Bitrate exporting
 	• 1080p: 12–16 Mb/s
 	• 4 K: 45–80 Mb/s
